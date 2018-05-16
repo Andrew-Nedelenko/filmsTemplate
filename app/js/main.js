@@ -50,5 +50,5 @@ search_icon.click(function () {
         bool_search = true;
     }
 
-})
+});
 
