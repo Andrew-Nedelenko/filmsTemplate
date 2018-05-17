@@ -52,3 +52,30 @@ search_icon.click(function () {
 
 });
 
+const left_slide = $('.fa-angle-left');
+const right_slide = $('.fa-angle-right');
+const slide_body = $('.inner_slider img');
+let lefted = 0;
+left_slide.click(function () {
+    if(lefted >= 652)
+    {
+        lefted = 0;
+        slide_body.css('right', lefted + 'px');
+    }else
+    {
+        lefted += 163;
+    slide_body.css('right', lefted + 'px');
+    }    
+});
+
+right_slide.click(function () {
+    if(lefted <= -652)
+    {
+        lefted = 0;
+        slide_body.css('right', lefted + 'px');
+    }else
+    {
+        lefted -= 163;
+    slide_body.css('right', lefted + 'px');
+    }
+});
