@@ -7,7 +7,7 @@ $(document).ready(function () {
 const hamb = $(".fa-bars");
 let bool = true;
 const hide_nav = $(".hide_nav");
-const nav_hover = $('.start_section');
+const nav_hover = $('.nav_client');
 hamb.click(function () {
     if(bool)
     {   
@@ -52,30 +52,16 @@ search_icon.click(function () {
 
 });
 
-const left_slide = $('.fa-angle-left');
-const right_slide = $('.fa-angle-right');
-const slide_body = $('.inner_slider img');
-let lefted = 0;
-left_slide.click(function () {
-    if(lefted >= 652)
+const arrow_up = $(".arrow_up");
+$(window).on('scroll', function () {
+    if($(window).scrollTop() < 550)
     {
-        lefted = 0;
-        slide_body.css('right', lefted + 'px');
+        arrow_up.css('right', '-70px');
     }else
     {
-        lefted += 163;
-    slide_body.css('right', lefted + 'px');
-    }    
-});
-
-right_slide.click(function () {
-    if(lefted <= -652)
-    {
-        lefted = 0;
-        slide_body.css('right', lefted + 'px');
-    }else
-    {
-        lefted -= 163;
-    slide_body.css('right', lefted + 'px');
+        arrow_up.css('right', '70px');
     }
 });
+arrow_up.click(function () {
+   $("html, body").animate({scrollTop:0}, 'slow');
+})
