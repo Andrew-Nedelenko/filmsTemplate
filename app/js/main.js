@@ -14,7 +14,8 @@ hamb.click(function () {
         nav_hover.addClass('nav_hover');
         hide_nav.css('left', '0');
         bool = false;
-    }else
+    }
+    else
     {
         nav_hover.removeClass('nav_hover');
         hide_nav.css('left', '-301px');
@@ -37,7 +38,7 @@ $(window).on('scroll', function () {
 });
 
 const search_icon = $('.fa-search');
-const search_input = $('.nav_bar input');
+const search_input = $('.input');
 let bool_search = true;
 search_icon.click(function () {
     if(bool_search)

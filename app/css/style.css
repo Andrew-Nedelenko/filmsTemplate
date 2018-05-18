@@ -109,8 +109,8 @@
   padding: 20px;
   cursor: pointer; }
 
-.nav_bar input {
-  position: absolute;
+.input {
+  position: fixed;
   right: 70px;
   top: -30px;
   height: 30px;
@@ -123,7 +123,7 @@
   font-size: 1.2em;
   padding: 0 7px 2px 7px;
   transition: .2s;
-  z-index: 14; }
+  z-index: 20; }
 
 :active, :hover, :focus {
   outline: 0;
@@ -1801,8 +1801,8 @@
     text-align: center;
     transform: translateY(120px);
     padding: 1rem; }
-  .nav_bar input {
-    position: absolute;
+  .input {
+    position: fixed;
     right: 80px;
     top: -50px;
     height: 52px;
@@ -1816,12 +1816,12 @@
     padding: 0 7px 2px 7px;
     transition: .2s;
     transform: translateY(-11px);
-    z-index: 14; } }
+    z-index: 20; } }
 
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
-  .nav_bar input {
-    position: absolute;
+  .input {
+    position: fixed;
     right: 80px;
     top: -50px;
     height: 52px;
@@ -1835,7 +1835,7 @@
     padding: 0 7px 2px 7px;
     transition: .2s;
     transform: translateY(-11px);
-    z-index: 14; }
+    z-index: 20; }
   .four_sect_inn_text_l {
     width: 100%;
     height: 100%;

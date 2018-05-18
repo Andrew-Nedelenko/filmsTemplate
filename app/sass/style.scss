@@ -136,8 +136,8 @@ $grey_font_color: rgb(200,200,200);
     cursor: pointer;
 }
 
-.nav_bar input {
-    position: absolute;
+.input {
+    position: fixed;
     right: 70px;
     top: -30px;
     height: 30px;
@@ -150,7 +150,7 @@ $grey_font_color: rgb(200,200,200);
     font-size: 1.2em;
     padding: 0 7px 2px 7px;
     transition: .2s;
-    z-index: 14;
+    z-index: 20;
 }
 
 :active, :hover, :focus {
@@ -2254,8 +2254,8 @@ $grey_font_color: rgb(200,200,200);
             padding: 1rem;
         }
 
-        .nav_bar input {
-            position: absolute;
+        .input {
+            position: fixed;
             right: 80px;
             top: -50px;
             height: 52px;
@@ -2269,15 +2269,15 @@ $grey_font_color: rgb(200,200,200);
             padding: 0 7px 2px 7px;
             transition: .2s;
             transform: translateY(-11px);
-            z-index: 14;
+            z-index: 20;
         }
     }
 
 
     /* Custom, iPhone Retina */ 
     @media (max-width : 320px) {
-        .nav_bar input {
-            position: absolute;
+        .input {
+            position: fixed;
             right: 80px;
             top: -50px;
             height: 52px;
@@ -2291,7 +2291,7 @@ $grey_font_color: rgb(200,200,200);
             padding: 0 7px 2px 7px;
             transition: .2s;
             transform: translateY(-11px);
-            z-index: 14;
+            z-index: 20;
         }
 
         .four_sect_inn_text_l {
